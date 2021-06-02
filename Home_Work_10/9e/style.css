@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(138, 218, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.header p {
+  text-transform: uppercase;
+  color: blue;
+  font: 400 20px sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  background: url(img/ball.png) right top repeat-y;
+  display: flex;
+}
+
+.menu {
+  width: 250px;
+  padding: 10px;
+  background-color: #f0e78d;
+}
+
+.menu p {
+  font: bold 14px sans-serif;
+}
+
+.menu ul {
+  padding-left: 25px;
+}
+
+.text {
+  padding-left: 25px;
+  flex-grow: 1;
+}
+
+.text h2 {
+  margin: 20px 0;
+  font: bold 22px sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text > img {
+  margin: 10px 10px 10px 0;
+  float: left;
+}
+
+.container p {
+  margin: 10px;
+}
+
+.footer {
+  clear: both;
+  background-color: rgb(138, 218, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  text-transform: uppercase;
+  color: blue;
+  font: 400 20px sans-serif;
+  margin: 0;
+}
+
+@media all and (max-width: 500px) {
+  .header {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .menu {
+    order: 2;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-right: 10px;
+  }
+
+  .text {
+    order: 1;
+  }
+
+  .content {
+    background: none;
+    flex-direction: column;
+  }
+
+  .text {
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+  }
+
+  .text > img {
+    float: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+}

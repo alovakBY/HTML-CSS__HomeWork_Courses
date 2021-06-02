@@ -1,0 +1,108 @@
+@keyframes Animation {
+  from {
+    background-color: rgb(250, 231, 121);
+  }
+  50% {
+    background-color: rgb(253, 83, 83);
+  }
+  to {
+    background-color: rgb(250, 231, 121);
+  }
+}
+
+@keyframes Animation2 {
+  from {
+    height: 150px;
+  }
+  50% {
+    height: 0px;
+  }
+  to {
+    height: 150px;
+  }
+}
+
+@keyframes Animation3 {
+  from {
+    border-radius: 50%;
+    background-color: rgb(255, 71, 240);
+  }
+  50% {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+    background-color: rgb(8, 255, 90);
+  }
+}
+
+@keyframes Animation4 {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(118, 187, 255);
+}
+
+.container {
+  border: 3px solid slateblue;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: slategray;
+}
+
+.container:hover .b {
+  animation: Animation2 5s infinite;
+}
+
+.container:hover .c {
+  animation: Animation3 2s infinite;
+}
+
+.container:hover .d {
+  animation: Animation4 5s infinite;
+}
+
+.a {
+  width: 150px;
+  height: 150px;
+  animation: Animation 3s infinite;
+}
+
+.b {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(112, 255, 184);
+}
+
+.c {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 172, 255);
+}
+
+.d {
+  width: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+}
